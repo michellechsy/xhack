@@ -12,7 +12,7 @@ var config = Object.create(require('./webpack.config.base'));
 // - plugins: common chunks.
 config.devtool = 'source-map';
 
-config.entry = './src/index.jsx';
+config.entry = './src/bootstrap.jsx';
 
 config.externals = {
   react: 'React',

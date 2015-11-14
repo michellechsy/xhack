@@ -2,8 +2,8 @@
   "name": "Reactify",
   "version": "0.1.0",
   "scripts": {
-    "build": "webpack --progress --colors --config webpack.config.dist.js",
-    "watch": "webpack --progress --colors --watch --config webpack.config.dist.js",
+    "build": "webpack --progress --colors --config webpack.config.dev.js",
+    "watch": "webpack --progress --colors --watch --config webpack.config.dev.js",
     "start": "webpack-dev-server --content-base build --config webpack.config.dev.js",
     "lint": "make lint",
     "test": "make test",
@@ -12,15 +12,14 @@
   "license": "Apache-2.0",
   "description": "React Redux biolerplate backed by webpack",
   "dependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
     "classnames": "^2.2.0",
     "debug": "^2.2.0",
     "es6-shim": "^0.33.13",
     "fbjs": "^0.4.0",
     "moment": "^2.10.6",
-    "react": "^0.14.2",
-    "react-redux": "^4.0.0",
-    "redux": "^3.0.4",
-    "redux-promise": "^0.5.0",
+    "react": "^0.13.0",
     "superagent": "^1.4.0"
   },
   "devDependencies": {

@@ -3,16 +3,13 @@
 import 'es6-shim';
 
 import React from 'react';
-import Router, { HistoryLocation } from 'react-router';
-import { main } from './views/routes';
+import App from './views/App';
 
 
-//require('../assets/favicon.ico');
-//require('../assets/app.<%= preprocessor %>');
+require('../assets/favicon.ico');
+require('../assets/app.scss');
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  Router.run(main, HistoryLocation, (View, state) => {
-    React.render(<View {...state} />, document.body);
-  });
+  React.render(<App />, document.getElementById('root'));
 });
